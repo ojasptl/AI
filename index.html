@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Verification</h1>
+        <form id="uploadForm">
+            <div class="upload-section">
+                <label for="file1">Upload First Image:</label>
+                <input type="file" id="file1" name="file1" accept="image/*" required>
+            </div>
+            <div class="upload-section">
+                <label for="file2">Upload Second Image:</label>
+                <input type="file" id="file2" name="file2" accept="image/*" required>
+            </div>
+            <button type="submit">Compare Faces</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
