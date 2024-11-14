@@ -53,7 +53,7 @@ async def verify_faces(file1: UploadFile = File(...), file2: UploadFile = File(.
 
         return JSONResponse({
             "is_same_person": result["verified"],
-            "similarity_score": result["distance"]
+            "similarity_score": 1 - result["distance"]
         })
 
     except Exception as e:
